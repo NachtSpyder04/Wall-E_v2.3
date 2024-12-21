@@ -1,0 +1,448 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081208: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51cb: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5a11: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:53 (discriminator 3)
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51c9: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51c1: uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:167
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51ce: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5a11: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:53 (discriminator 3)
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51c1: uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:167
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51c1: uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:167
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51cb: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x40082cfe: lock_acquire_generic at /home/saish_k/esp/esp-idf/components/newlib/locks.c:150
+0x40082df1: _lock_acquire_recursive at /home/saish_k/esp/esp-idf/components/newlib/locks.c:158
+0x400d594b: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:213
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51cb: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5a11: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:53 (discriminator 3)
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51d3: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51c1: uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:167
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51d3: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400de007: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1111
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5a11: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:53 (discriminator 3)
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51c1: uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:167
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51d9: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51c1: uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:167
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51cb: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5a11: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:53 (discriminator 3)
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51cb: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5a11: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:53 (discriminator 3)
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d9d3f: task_wdt_timeout_handling at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400da10c: task_wdt_isr at /home/saish_k/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082aa5: _xt_lowint1 at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d51d3: uart_ll_get_txfifo_len at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d598f: uart_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_uart.c:222
+0x400d47fb: console_write at /home/saish_k/esp/esp-idf/components/vfs/vfs_console.c:73
+0x400d43c2: esp_vfs_write at /home/saish_k/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400dd14f: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e4eeb: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e0ae6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400e0c51: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x400e82ad: esp_log_writev at /home/saish_k/esp/esp-idf/components/log/log.c:200
+0x4008bff1: esp_log_write at /home/saish_k/esp/esp-idf/components/log/log.c:210
+0x400d5fea: i2c_dev_create_mutex at /home/saish_k/Wall-E/components/sra-board-component/src/i2cdev.c:128 (discriminator 3)
+0x400d5a5e: i2c_master_init at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:50 (discriminator 2)
+0x400d5a6b: enable_mpu6050 at /home/saish_k/Wall-E/components/sra-board-component/src/mpu6050.c:56
+0x400d59bc: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:35
+0x400890c9: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

@@ -1,0 +1,121 @@
+[0/1] Re-running CMake...
+-- Found Git: /usr/bin/git (found version "2.47.1")
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/saish_k/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/saish_k/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/saish_k/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/saish_k/Wall-E/3_MPU/sdkconfig
+Loading defaults file /home/saish_k/Wall-E/3_MPU/sdkconfig.defaults...
+-- Found Python3: /home/saish_k/.espressif/python_env/idf5.1_py3.12_env/bin/python (found version "3.12.7") found components: Interpreter
+-- App "mpu_test" version: v2.2-68-g803db2d
+-- Adding linker script /home/saish_k/Wall-E/3_MPU/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs sra-board-component tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/saish_k/esp/esp-idf/components/app_trace /home/saish_k/esp/esp-idf/components/app_update /home/saish_k/esp/esp-idf/components/bootloader /home/saish_k/esp/esp-idf/components/bootloader_support /home/saish_k/esp/esp-idf/components/bt /home/saish_k/esp/esp-idf/components/cmock /home/saish_k/esp/esp-idf/components/console /home/saish_k/esp/esp-idf/components/cxx /home/saish_k/esp/esp-idf/components/driver /home/saish_k/esp/esp-idf/components/efuse /home/saish_k/esp/esp-idf/components/esp-tls /home/saish_k/esp/esp-idf/components/esp_adc /home/saish_k/esp/esp-idf/components/esp_app_format /home/saish_k/esp/esp-idf/components/esp_coex /home/saish_k/esp/esp-idf/components/esp_common /home/saish_k/esp/esp-idf/components/esp_eth /home/saish_k/esp/esp-idf/components/esp_event /home/saish_k/esp/esp-idf/components/esp_gdbstub /home/saish_k/esp/esp-idf/components/esp_hid /home/saish_k/esp/esp-idf/components/esp_http_client /home/saish_k/esp/esp-idf/components/esp_http_server /home/saish_k/esp/esp-idf/components/esp_https_ota /home/saish_k/esp/esp-idf/components/esp_https_server /home/saish_k/esp/esp-idf/components/esp_hw_support /home/saish_k/esp/esp-idf/components/esp_lcd /home/saish_k/esp/esp-idf/components/esp_local_ctrl /home/saish_k/esp/esp-idf/components/esp_mm /home/saish_k/esp/esp-idf/components/esp_netif /home/saish_k/esp/esp-idf/components/esp_netif_stack /home/saish_k/esp/esp-idf/components/esp_partition /home/saish_k/esp/esp-idf/components/esp_phy /home/saish_k/esp/esp-idf/components/esp_pm /home/saish_k/esp/esp-idf/components/esp_psram /home/saish_k/esp/esp-idf/components/esp_ringbuf /home/saish_k/esp/esp-idf/components/esp_rom /home/saish_k/esp/esp-idf/components/esp_system /home/saish_k/esp/esp-idf/components/esp_timer /home/saish_k/esp/esp-idf/components/esp_wifi /home/saish_k/esp/esp-idf/components/espcoredump /home/saish_k/esp/esp-idf/components/esptool_py /home/saish_k/esp/esp-idf/components/fatfs /home/saish_k/esp/esp-idf/components/freertos /home/saish_k/esp/esp-idf/components/hal /home/saish_k/esp/esp-idf/components/heap /home/saish_k/esp/esp-idf/components/http_parser /home/saish_k/esp/esp-idf/components/idf_test /home/saish_k/esp/esp-idf/components/ieee802154 /home/saish_k/esp/esp-idf/components/json /home/saish_k/esp/esp-idf/components/log /home/saish_k/esp/esp-idf/components/lwip /home/saish_k/Wall-E/3_MPU/main /home/saish_k/esp/esp-idf/components/mbedtls /home/saish_k/esp/esp-idf/components/mqtt /home/saish_k/esp/esp-idf/components/newlib /home/saish_k/esp/esp-idf/components/nvs_flash /home/saish_k/esp/esp-idf/components/openthread /home/saish_k/esp/esp-idf/components/partition_table /home/saish_k/esp/esp-idf/components/perfmon /home/saish_k/esp/esp-idf/components/protobuf-c /home/saish_k/esp/esp-idf/components/protocomm /home/saish_k/esp/esp-idf/components/pthread /home/saish_k/esp/esp-idf/components/sdmmc /home/saish_k/esp/esp-idf/components/soc /home/saish_k/esp/esp-idf/components/spi_flash /home/saish_k/esp/esp-idf/components/spiffs /home/saish_k/Wall-E/components/sra-board-component /home/saish_k/esp/esp-idf/components/tcp_transport /home/saish_k/esp/esp-idf/components/ulp /home/saish_k/esp/esp-idf/components/unity /home/saish_k/esp/esp-idf/components/usb /home/saish_k/esp/esp-idf/components/vfs /home/saish_k/esp/esp-idf/components/wear_levelling /home/saish_k/esp/esp-idf/components/wifi_provisioning /home/saish_k/esp/esp-idf/components/wpa_supplicant /home/saish_k/esp/esp-idf/components/xtensa
+-- Configuring done (4.4s)
+-- Generating done (0.6s)
+-- Build files have been written to: /home/saish_k/Wall-E/3_MPU/build
+[1/6] cd /home/saish_k/Wall-E/3_MPU/build/esp-idf/esptool_py && /home/saish_k/.espressif/python_env/idf5.1_py3.12_env/bin/python /home/saish_k/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/saish_k/Wall-E/3_MPU/build/partition_table/partition-table.bin /home/saish_k/Wall-E/3_MPU/build/mpu_test.bin
+mpu_test.bin binary size 0x51cc0 bytes. Smallest app partition is 0x100000 bytes. 0xae340 bytes (68%) free.
+[2/6] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Found Git: /usr/bin/git (found version "2.47.1")
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/saish_k/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/saish_k/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/saish_k/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/saish_k/Wall-E/3_MPU/sdkconfig
+Compiler supported targets: xtensa-esp32-elf
+
+-- Adding linker script /home/saish_k/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.1.4
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /home/saish_k/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/saish_k/esp/esp-idf/components/bootloader /home/saish_k/esp/esp-idf/components/bootloader_support /home/saish_k/esp/esp-idf/components/efuse /home/saish_k/esp/esp-idf/components/esp_app_format /home/saish_k/esp/esp-idf/components/esp_common /home/saish_k/esp/esp-idf/components/esp_hw_support /home/saish_k/esp/esp-idf/components/esp_rom /home/saish_k/esp/esp-idf/components/esp_system /home/saish_k/esp/esp-idf/components/esptool_py /home/saish_k/esp/esp-idf/components/freertos /home/saish_k/esp/esp-idf/components/hal /home/saish_k/esp/esp-idf/components/log /home/saish_k/esp/esp-idf/components/bootloader/subproject/main /home/saish_k/esp/esp-idf/components/bootloader/subproject/components/micro-ecc /home/saish_k/esp/esp-idf/components/newlib /home/saish_k/esp/esp-idf/components/partition_table /home/saish_k/esp/esp-idf/components/soc /home/saish_k/esp/esp-idf/components/spi_flash /home/saish_k/esp/esp-idf/components/xtensa
+-- Configuring done (2.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/saish_k/Wall-E/3_MPU/build/bootloader
+[1/2] cd /home/saish_k/Wall-E/3_MPU/build/bootloader/esp-idf/esptool_py && /home/saish_k/.espressif/python_env/idf5.1_py3.12_env/bin/python /home/saish_k/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/saish_k/Wall-E/3_MPU/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[3/6] No install step for 'bootloader'
+[4/6] Completed 'bootloader'
+[4/6] cd /home/saish_k/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/saish_k/esp/esp-idf -D "SERIAL_TOOL=/home/saish_k/.espressif/python_env/idf5.1_py3.12_env/bin/python;;/home/saish_k/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/saish_k/Wall-E/3_MPU/build -P /home/saish_k/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 mpu_test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a0:a3:b3:90:8b:c4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00061fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16726...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076a2... (100 %)
+Wrote 26720 bytes (16726 compressed) at 0x00001000 in 0.9 seconds (effective 245.7 kbit/s)...
+Hash of data verified.
+Compressed 335040 bytes to 197671...
+Writing at 0x00010000... (7 %)
+Writing at 0x00018d06... (15 %)
+Writing at 0x000228c9... (23 %)
+Writing at 0x0002813c... (30 %)
+Writing at 0x0002d960... (38 %)
+Writing at 0x00033039... (46 %)
+Writing at 0x00038c25... (53 %)
+Writing at 0x0003eb0a... (61 %)
+Writing at 0x00044394... (69 %)
+Writing at 0x0004d806... (76 %)
+Writing at 0x00055d0e... (84 %)
+Writing at 0x0005b726... (92 %)
+Writing at 0x00061558... (100 %)
+Wrote 335040 bytes (197671 compressed) at 0x00010000 in 4.6 seconds (effective 583.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 340.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

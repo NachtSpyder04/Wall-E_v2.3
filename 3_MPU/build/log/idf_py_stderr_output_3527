@@ -1,0 +1,245 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081294: call_start_cpu1 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400818fa: panic_abort at /home/saish_k/esp/esp-idf/components/esp_system/panic.c:466
+0x40086ad5: esp_system_abort at /home/saish_k/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c389: __assert_func at /home/saish_k/esp/esp-idf/components/newlib/assert.c:81
+0x400d6742: ssd1306_init at /home/saish_k/Wall-E/components/sra-board-component/src/lvgl_helpers.c:71 (discriminator 1)
+0x400d6489: init_oled at /home/saish_k/Wall-E/components/sra-board-component/src/oled.c:254
+0x400d5e38: mpu_task at /home/saish_k/Wall-E/3_MPU/main/main.c:22
+0x400891d1: vPortTaskWrapper at /home/saish_k/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

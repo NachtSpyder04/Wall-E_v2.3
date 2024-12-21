@@ -1,0 +1,1189 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (175) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (531) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (556) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (568) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (580) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (590) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (595) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (600) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (607) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (613) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (619) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (632) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (652) app_start: Starting scheduler on CPU1[0m
+[0;32mI (652) main_task: Started on CPU0[0m
+[0;32mI (662) main_task: Calling app_main()[0m
+[0;32mI (662) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (672) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (682) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (682) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (692) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (692) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (702) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (712) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (722) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (722) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (732) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (732) adc: Calibration Success[0m
+[0;32mI (742) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (742) adc: Calibration Success[0m
+[0;32mI (752) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (752) adc: Calibration Success[0m
+[0;32mI (762) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (762) adc: Calibration Success[0m
+[0;32mI (772) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (772) adc: Calibration Success[0m
+[0;32mI (782) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (792) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (792) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (802) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (812) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (822) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+
+assert failed: ssd1306_init lvgl_helpers.c:71 (0 == err)
+
+
+Backtrace: 0x40081afe:0x3ffc7ec0 0x4008a2e1:0x3ffc7ee0 0x400916a5:0x3ffc7f00 0x400d8e46:0x3ffc8020 0x400d8bc5:0x3ffc8050 0x400d7bf6:0x3ffc8070 0x4008ccf9:0x3ffc8150
+
+
+
+
+ELF file SHA256: 68fd5000f499bd51
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 11 2024 20:22:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 www              Unknown data     01 82 00210000 00100000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ae5ch (175708) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003ae84 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0003ae90 vaddr=3ffb0000 size=03b84h ( 15236) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0003ea1c vaddr=40080000 size=015fch (  5628) load[0m
+[0;32mI (192) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b897ch (756092) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=000f89a4 vaddr=400815fc size=159c4h ( 88516) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (532) cpu_start: Multicore app[0m
+[0;32mI (532) cpu_start: Pro cpu up.[0m
+[0;32mI (532) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (521) cpu_start: App cpu up.[0m
+[0;32mI (552) cpu_start: Pro cpu start user code[0m
+[0;32mI (552) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (552) cpu_start: Application information:[0m
+[0;32mI (557) cpu_start: Project name:     line_following[0m
+[0;32mI (562) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (569) cpu_start: Compile time:     Nov 12 2024 17:00:19[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  68fd5000f499bd51...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC40D8 len 0001BF28 (111 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40096FC0 len 00009040 (36 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (673) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (683) MCPWM: motor 0x3ffc8330 created[0m
+[0;32mI (683) MCPWM: motor timer 0x3ffc8368 created[0m
+[0;32mI (693) MCPWM: motor 0x3ffc8330 enable of timer 0x3ffc8368[0m
+[0;32mI (693) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) MCPWM: motor 0x3ffc89e0 created[0m
+[0;32mI (723) MCPWM: motor timer 0x3ffc8a18 created[0m
+[0;32mI (723) MCPWM: motor 0x3ffc89e0 enable of timer 0x3ffc8a18[0m
+[0;32mI (733) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (733) adc: Calibration Success[0m
+[0;32mI (743) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (743) adc: Calibration Success[0m
+[0;32mI (753) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (753) adc: Calibration Success[0m
+[0;32mI (763) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (763) adc: Calibration Success[0m
+[0;32mI (773) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (773) adc: Calibration Success[0m
+[0;32mI (783) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (813) bar_graph: enabled bar graph leds in mode: 1[0m
+[0;31mE (823) i2cdev: Could not write to device [0x3c at 1]: -1 (ESP_FAIL)[0m
+

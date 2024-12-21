@@ -1,0 +1,1444 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15624
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 17 2024 10:42:55[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ac00h ( 44032) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0001ac28 vaddr=3ffb0000 size=02190h (  8592) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001cdc0 vaddr=40080000 size=03258h ( 12888) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=182a8h ( 98984) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000382d0 vaddr=40083258 size=0a3dch ( 41948) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x40081208[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (223) cpu_start: Pro cpu start user code[0m
+[0;32mI (223) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (223) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     mpu_test[0m
+[0;32mI (232) cpu_start: App version:      v2.2-68-g803db2d[0m
+[0;32mI (238) cpu_start: Compile time:     Dec 13 2024 18:15:01[0m
+[0;32mI (244) cpu_start: ELF file SHA256:  ba744aba5f3b826a...[0m
+[0;32mI (250) cpu_start: ESP-IDF:          v5.1.4[0m
+[0;32mI (255) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (265) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFB2A98 len 0002D568 (181 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 4008D634 len 000129CC (74 KiB): IRAM[0m
+[0;32mI (309) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (316) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (330) app_start: Starting scheduler on CPU0[0m
+[0;32mI (335) app_start: Starting scheduler on CPU1[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) main_task: Returned from app_main()[0m
+[0;31mE (1345) i2cdev: Could not read from device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (1345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (2345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (2345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (3345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (3345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (4345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (4345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (5345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (5345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (6345) i2cdev: Could not read from device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (6345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (7345) i2cdev: Could not read from device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (7345) mpu_6050: Failed to read MPU![0m
+[0;31mE (7345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (8345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (8345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (9345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (9345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (10345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (10345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (11345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (11345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (12345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (12345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (13345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (13345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (14345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (14345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (15345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (15345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (16345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (17345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (18345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (19345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (20345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (20345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (21345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (22345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (23345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (24345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (25345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (25345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (26345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (27345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (28345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (28345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (29345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (29345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (30345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (30345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (31345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (31345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (32345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (32345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (33345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (33345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (34345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (34345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (35345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (35345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (36345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (36345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (37345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (37345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (38345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (38345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (39345) i2cdev: Could not write to device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (39345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40345) i2cdev: Could not read from device [0x68 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (40345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40795) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40795) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40795) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40805) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40805) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40815) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40825) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40825) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40835) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40845) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40855) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40855) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40865) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40875) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40875) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40885) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40895) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40895) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40905) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40915) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40925) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40925) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40935) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40945) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40945) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40955) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40965) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40965) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40975) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40985) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (40995) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (40995) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41005) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41015) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41015) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41025) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41035) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41045) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41045) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41055) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41065) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41065) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41075) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41085) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41085) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41095) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41105) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41115) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41115) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41125) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41135) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41135) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41145) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41155) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41155) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41165) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41175) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41185) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41185) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41195) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41205) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41205) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41215) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41225) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41225) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41235) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41245) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41255) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41255) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41265) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41275) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41275) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41285) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41295) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41305) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41305) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41315) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41325) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41325) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41335) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41345) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41355) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41365) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41375) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41375) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41385) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41395) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41395) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41405) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41415) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41415) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41425) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41435) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41445) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41445) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41455) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41465) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41465) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41475) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41485) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41495) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41495) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41505) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41515) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41515) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41525) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41535) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41535) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41545) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41555) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41565) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41565) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41575) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41585) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41585) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41595) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41605) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41605) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41615) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41625) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41635) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41635) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41645) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41655) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41655) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41665) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41675) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41675) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41685) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41695) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41705) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41705) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41715) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41725) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41725) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41735) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41745) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41755) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41755) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41765) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41775) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41775) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41785) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41795) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41795) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41805) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41815) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41825) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41825) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41835) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41845) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41845) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41855) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41865) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41865) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41875) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41885) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41895) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41895) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41905) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41915) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41915) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41925) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41935) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41945) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41945) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41955) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41965) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41965) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41975) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41985) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (41985) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (41995) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42005) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42015) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42015) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42025) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42035) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42035) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42045) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42055) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42055) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42065) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42075) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42085) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42085) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42095) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42105) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42105) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42115) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42125) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42125) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42135) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42145) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42155) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42155) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42165) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42175) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42175) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42185) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42195) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42205) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42205) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42215) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42225) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42225) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42235) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42245) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42245) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42255) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42265) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42275) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42275) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42285) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42295) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42295) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42305) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42315) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42315) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42325) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42335) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42345) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42355) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42365) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42365) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42375) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42385) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42395) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42395) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42405) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42415) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42415) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42425) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42435) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42435) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42445) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42455) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42465) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42465) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42475) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42485) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42485) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42495) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42505) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42505) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42515) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42525) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42535) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42535) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42545) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42555) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42555) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42565) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42575) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42575) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42585) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42595) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42605) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42605) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42615) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42625) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42625) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42635) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42645) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42655) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42655) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42665) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42675) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42675) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42685) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42695) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42695) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42705) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42715) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42725) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42725) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42735) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42745) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42745) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42755) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42765) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42765) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42775) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42785) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42795) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42795) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42805) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42815) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42815) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42825) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42835) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42845) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42845) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42855) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42865) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42865) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42875) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42885) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42885) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42895) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42905) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42915) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42915) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42925) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42935) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42935) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42945) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42955) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42955) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42965) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42975) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42985) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (42985) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (42995) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43005) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43005) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43015) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43025) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43025) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43035) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43045) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43055) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43055) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43065) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43075) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43075) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43085) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43095) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43105) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43105) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43115) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43125) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43125) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43135) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43145) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43145) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43155) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43165) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43175) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43175) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43185) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43195) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43195) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43205) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43215) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43215) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43225) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43235) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43245) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43245) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43255) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43265) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43265) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43275) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43285) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43295) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43295) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43305) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43315) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43315) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43325) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43335) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43335) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43355) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43365) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43365) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43375) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43385) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43385) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43395) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43405) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43405) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43415) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43425) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43435) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43435) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43445) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43455) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43455) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43465) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43475) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43475) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43485) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43495) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43505) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43505) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43515) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43525) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43525) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43535) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43545) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43555) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43555) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43565) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43575) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43575) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43585) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43595) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43595) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43605) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43615) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43625) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43625) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43635) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43645) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43645) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43655) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43665) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43665) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43675) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43685) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43695) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43695) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43705) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43715) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43715) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43725) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43735) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43745) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43745) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43755) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43765) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43765) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43775) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43785) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43785) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43795) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43805) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43815) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43815) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43825) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43835) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43835) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43845) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43855) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43855) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43865) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43875) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43885) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43885) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43895) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43905) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43905) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43915) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43925) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43925) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43935) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43945) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43955) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43955) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43965) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43975) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43975) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (43985) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (43995) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44005) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44005) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44015) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44025) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44025) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44035) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44045) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44045) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44055) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44065) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44075) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44075) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44085) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44095) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44095) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44105) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44115) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44115) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44125) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44135) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44145) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44145) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44155) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44165) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44165) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44175) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44185) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44195) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44195) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44205) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44215) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44215) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44225) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44235) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44235) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44245) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44255) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44265) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44265) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44275) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44285) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44285) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44295) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44305) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44305) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44315) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44325) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44335) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44335) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44355) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44355) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44365) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44375) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44375) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44385) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44395) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44405) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44405) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44415) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44425) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44425) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44435) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44445) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44455) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44455) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44465) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44475) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44475) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44485) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44495) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44495) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44505) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44515) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44525) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44525) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44535) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44545) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44545) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44555) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44565) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44565) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44575) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44585) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44595) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44595) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44605) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44615) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44615) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44625) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44635) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44645) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44645) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44655) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44665) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44665) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44675) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44685) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44685) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44695) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44705) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44715) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44715) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44725) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44735) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44735) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44745) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44755) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44755) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44765) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44775) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44785) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44785) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44795) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44805) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44805) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44815) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44825) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44825) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44835) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44845) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44855) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44855) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44865) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44875) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44875) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44885) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44895) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44905) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44905) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44915) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44925) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44925) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44935) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44945) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44945) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44955) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44965) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44975) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44975) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44985) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (44995) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (44995) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45005) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45015) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45015) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45025) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45035) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45045) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45045) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45055) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45065) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45065) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45075) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45085) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45095) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45095) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45105) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45115) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45115) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45125) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45135) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45135) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45145) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45155) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45165) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45165) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45175) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45185) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45185) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45195) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45205) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45205) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45215) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45225) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45235) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45235) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45245) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45255) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45255) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45265) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45275) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45275) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45285) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45295) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45305) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45305) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45315) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45325) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45325) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45335) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45355) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45355) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45365) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45375) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45375) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45385) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45395) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45395) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45405) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45415) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45425) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45425) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45435) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45445) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45445) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45455) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45465) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45465) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45475) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45485) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45495) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45495) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45505) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45515) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45515) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45525) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45535) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45545) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45545) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45555) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45565) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45565) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45575) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45585) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45585) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45595) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45605) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45615) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45615) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45625) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45635) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45635) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45645) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45655) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45655) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45665) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45675) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45685) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45685) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45695) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45705) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45705) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45715) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45725) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45725) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45735) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45745) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45755) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45755) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45765) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45775) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45775) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45785) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45795) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45805) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45805) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45815) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45825) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45825) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45835) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45845) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45845) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45855) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45865) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45875) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45875) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45885) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45895) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45895) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45905) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45915) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45915) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45925) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45935) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45945) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45945) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45955) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45965) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45965) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45975) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45985) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (45995) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (45995) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46005) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46015) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46015) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46025) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46035) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46035) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46045) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46055) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46065) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46065) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46075) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46085) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46085) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46095) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46105) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46105) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46115) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46125) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46135) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46135) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46145) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46155) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46155) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46165) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46175) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46175) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46185) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46195) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46205) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46205) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46215) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46225) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46225) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46235) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46245) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46255) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46255) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46265) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46275) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46275) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46285) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46295) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46295) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46305) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46315) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46325) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46325) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46335) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46345) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46345) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46355) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46365) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46365) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46375) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46385) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46395) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46395) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46405) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46415) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46415) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46425) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46435) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46445) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46445) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46455) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46465) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46465) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46475) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46485) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46485) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46495) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46505) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46515) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46515) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46525) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46535) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46535) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46545) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46555) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46555) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46565) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46575) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46585) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46585) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46595) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46605) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46605) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46615) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46625) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46625) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46635) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46645) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46655) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46655) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46665) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46675) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46675) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46685) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46695) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46705) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46705) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46715) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46725) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46725) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46735) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46745) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46745) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46755) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46765) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46775) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46775) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46785) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46795) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46795) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46805) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46815) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46815) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46825) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46835) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46845) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46845) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46855) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46865) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46865) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46875) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46885) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46895) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46895) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46905) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46915) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46915) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46925) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46935) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46935) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46945) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46955) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46965) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46965) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46975) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46985) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (46985) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (46995) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47005) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47005) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47015) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47025) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47035) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47035) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47045) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47055) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47055) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47065) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47075) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47075) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47085) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47095) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47105) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47105) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47115) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47125) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47125) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47135) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47145) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47155) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47155) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47165) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47175) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47175) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47185) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47195) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47195) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47205) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47215) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47225) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47225) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47235) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47245) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47245) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47255) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47265) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47265) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47275) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47285) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47295) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47295) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47305) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47315) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47315) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47325) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47335) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47335) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47345) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47355) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47365) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47365) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47375) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47385) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47385) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47395) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47405) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47415) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47415) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47425) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47435) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47435) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47445) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47455) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47455) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47465) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47475) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47485) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47485) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47495) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47505) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47505) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47515) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47525) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47525) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47535) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47545) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47555) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47555) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47565) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47575) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47575) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47585) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47595) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47605) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47605) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47615) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47625) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47625) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47635) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47645) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47645) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47655) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47665) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47675) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47675) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47685) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47695) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47695) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47705) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47715) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47715) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47725) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47735) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47745) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47745) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47755) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47765) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47765) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47775) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47785) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47785) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47795) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47805) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47815) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47815) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47825) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47835) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47835) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47845) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47855) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47865) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47865) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47875) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47885) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47885) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47895) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47905) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47905) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47915) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47925) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47935) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47935) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47945) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47955) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47955) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47965) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47975) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47975) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (47985) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (47995) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48005) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48005) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48015) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48025) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48025) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48035) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48045) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48055) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48055) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48065) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48075) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48075) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48085) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48095) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48095) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48105) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48115) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48125) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48125) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48135) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48145) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48145) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48155) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48165) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48165) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48175) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48185) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48195) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48195) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48205) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48215) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48215) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48225) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48235) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48235) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48245) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48255) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48265) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48265) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48275) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48285) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48285) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48295) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48305) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48315) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48315) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48325) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48335) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48335) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48345) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48355) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48355) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48365) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48375) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48385) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48385) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48395) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48405) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48405) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48415) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48425) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48425) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48435) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48445) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48455) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48455) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48465) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48475) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48475) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48485) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48495) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48505) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48505) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48515) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48525) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48525) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48535) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48545) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48545) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48555) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48565) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48575) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48575) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48585) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48595) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48595) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48605) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48615) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48615) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48625) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48635) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48645) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48645) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48655) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48665) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48665) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48675) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48685) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48685) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48695) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48705) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48715) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48715) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48725) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48735) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48735) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48745) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48755) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48765) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48765) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48775) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48785) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48785) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48795) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48805) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48805) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48815) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48825) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48835) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48835) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48845) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48855) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48855) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48865) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48875) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48875) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48885) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48895) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48905) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48905) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48915) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48925) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48925) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48935) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48945) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48955) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48955) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48965) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48975) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48975) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48985) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (48995) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (48995) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49005) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49015) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49025) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49025) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49035) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49045) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49045) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49055) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49065) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49065) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49075) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49085) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49095) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49095) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49105) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49115) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49115) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49125) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49135) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49135) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49145) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49155) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49165) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49165) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49175) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49185) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49185) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49195) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49205) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49215) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49215) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49225) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49235) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49235) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49245) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49255) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49255) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49265) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49275) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49285) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49285) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49295) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49305) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49305) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49315) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49325) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49325) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49335) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49345) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49355) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49355) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49365) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49375) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49375) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49385) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49395) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49405) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49405) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49415) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49425) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49425) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49435) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49445) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49445) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49455) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49465) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49475) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49475) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49485) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49495) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49495) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49505) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49515) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49515) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49525) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49535) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49545) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49545) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49555) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49565) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49565) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49575) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49585) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49585) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49595) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49605) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49615) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49615) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49625) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49635) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49635) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49645) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49655) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49665) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49665) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49675) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49685) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49685) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49695) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49705) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49705) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49715) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49725) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49735) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49735) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49745) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49755) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49755) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49765) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49775) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49775) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49785) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49795) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49805) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49805) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49815) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49825) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49825) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49835) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49845) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49855) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49855) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49865) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49875) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49875) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49885) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49895) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49895) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49905) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49915) mpu_test: MPU Initialisation Failed / Connection Broke![0m
+[0;31mE (49925) i2cdev: Could not read from device [0x68 at 1]: -1 (ESP_FAIL)[0m
+[0;31mE (49925) mpu_test: MPU Initialisation Failed / Connection Broke![0m

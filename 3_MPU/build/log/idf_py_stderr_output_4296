@@ -1,0 +1,173 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40081afe: esp_cpu_process_stack_pc at /home/saish_k/esp/esp-idf/components/xtensa/include/esp_cpu_utils.h:24
+ (inlined by) esp_backtrace_get_next_frame at /home/saish_k/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c:33
+0x4008a2e1: spi_flash_ll_set_read_mode at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h:245
+0x400d8e46: cache_ll_l1_get_bus at /home/saish_k/esp/esp-idf/components/hal/esp32/include/hal/cache_ll.h:115
+ (inlined by) s_reserve_drom_region at /home/saish_k/esp/esp-idf/components/esp_mm/esp_mmu_map.c:164
+0x400d8bc5: bootloader_init_mem at /home/saish_k/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c:22
+0x400d7bf6: i2c_param_config at /home/saish_k/esp/esp-idf/components/driver/i2c/i2c.c:769
+0x4008ccf9: spi_flash_chip_generic_erase_chip at /home/saish_k/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c:172
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081498: call_start_cpu0 at /home/saish_k/esp/esp-idf/components/esp_system/port/cpu_start.c:657
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is ba744aba5f3b826aba94bbdf9fadb4f159b8836536501898b97b431c855b00c1[0m
+[0m

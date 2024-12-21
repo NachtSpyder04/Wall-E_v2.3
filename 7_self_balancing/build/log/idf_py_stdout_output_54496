@@ -1,0 +1,784 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15624
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (28) boot: ESP-IDF v5.1.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2024 14:34:34[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v1.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=280e0h (164064) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00038108 vaddr=3ffb0000 size=03c1ch ( 15388) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003bd2c vaddr=40080000 size=042ech ( 17132) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=94d18h (609560) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000d4d40 vaddr=400842ec size=131cch ( 78284) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (440) boot: Disabling RNG early entropy source...[0m
+[0;32mI (451) cpu_start: Multicore app[0m
+[0;32mI (451) cpu_start: Pro cpu up.[0m
+[0;32mI (452) cpu_start: Starting app cpu, entry point is 0x40081498[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (469) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) cpu_start: Application information:[0m
+[0;32mI (474) cpu_start: Project name:     self_balancing[0m
+[0;32mI (480) cpu_start: App version:      v2.2-68-g803db2d-dirty[0m
+[0;32mI (486) cpu_start: Compile time:     Dec 21 2024 14:04:35[0m
+[0;32mI (492) cpu_start: ELF file SHA256:  6b4a3fc5577c433d...[0m
+[0;32mI (498) cpu_start: ESP-IDF:          v5.1.4[0m
+[0;32mI (503) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (508) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (512) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (525) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB8988 len 00027678 (157 KiB): DRAM[0m
+[0;32mI (537) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400974B8 len 00008B48 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: gd[0m
+[0;32mI (560) spi_flash: flash io: dio[0m
+[0;33mW (564) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) app_start: Starting scheduler on CPU0[0m
+[0;32mI (582) app_start: Starting scheduler on CPU1[0m
+[0;32mI (582) main_task: Started on CPU0[0m
+[0;32mI (592) main_task: Calling app_main()[0m
+[0;32mI (652) wifi station: ESP_WIFI_MODE_STA[0m
+I (662) wifi:wifi driver task: 3ffc2020, prio:23, stack:6656, core=0
+I (682) wifi:wifi firmware version: 3ce09e5
+I (682) wifi:wifi certification version: v7.0
+I (682) wifi:config NVS flash: enabled
+I (682) wifi:config nano formating: disabled
+I (692) wifi:Init data frame dynamic rx buffer num: 32
+I (692) wifi:Init static rx mgmt buffer num: 5
+I (702) wifi:Init management short buffer num: 32
+I (702) wifi:Init dynamic tx buffer num: 32
+I (702) wifi:Init static rx buffer size: 1600
+I (712) wifi:Init static rx buffer num: 10
+I (712) wifi:Init dynamic rx buffer num: 32
+[0;32mI (722) wifi_init: rx ba win: 6[0m
+[0;32mI (722) wifi_init: tcpip mbox: 32[0m
+[0;32mI (722) wifi_init: udp mbox: 6[0m
+[0;32mI (732) wifi_init: tcp mbox: 6[0m
+[0;32mI (732) wifi_init: tcp tx win: 5760[0m
+[0;32mI (742) wifi_init: tcp rx win: 5760[0m
+[0;32mI (742) wifi_init: tcp mss: 1440[0m
+[0;32mI (742) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (752) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (762) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (842) wifi:mode : sta (30:ae:a4:4b:00:70)
+I (842) wifi:enable tsf
+[0;32mI (842) wifi station: wifi_init_sta finished.[0m
+I (852) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (852) wifi:state: init -> auth (b0)
+I (862) wifi:state: auth -> assoc (0)
+I (872) wifi:state: assoc -> run (10)
+I (1032) wifi:connected with Galaxy M21BDFC, aid = 2, channel 1, BW20, bssid = 96:e7:3d:0d:3a:f3
+I (1032) wifi:security: WPA2-PSK, phy: bgn, rssi: -35
+I (1042) wifi:pm start, type: 1
+
+I (1042) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1052) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (1062) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1062) wifi:<ba-add>idx:0 (ifx:0, 96:e7:3d:0d:3a:f3), tid:0, ssn:0, winSize:64
+[0;32mI (2072) esp_netif_handlers: sta ip: 192.168.24.61, mask: 255.255.255.0, gw: 192.168.24.32[0m
+[0;32mI (2072) wifi station: got ip:192.168.24.61[0m
+[0;32mI (2072) wifi station: connected to ap SSID: Galaxy M21BDFC[0m
+[0;32mI (2082) main_task: Returned from app_main()[0m
+[0;32mI (2082) tuning_websocket_server: server listening[0m
+[0;32mI (2082) tuning_websocket_server: task starting[0m
+[0;32mI (2092) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2102) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2112) MCPWM: motor 0x3ffafcb8 created[0m
+[0;32mI (2122) MCPWM: motor timer 0x3ffafcf0 created[0m
+[0;32mI (2122) MCPWM: motor 0x3ffafcb8 enable of timer 0x3ffafcf0[0m
+[0;32mI (2132) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2142) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2152) MCPWM: motor 0x3ffb9e18 created[0m
+[0;32mI (2152) MCPWM: motor timer 0x3ffb9e50 created[0m
+[0;32mI (2162) MCPWM: motor 0x3ffb9e18 enable of timer 0x3ffb9e50[0m
+[0;32mI (2172) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.45 | Pitch: -61.94 | PitchError: 63.94[0m
+[0;32mI (2182) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.43 | Pitch: -61.94 | PitchError: 63.94[0m
+[0;32mI (2202) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.39 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2212) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.37 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2222) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.36 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2242) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.32 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2252) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.30 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2272) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.28 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2282) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.27 | Pitch: -61.94 | PitchError: 63.94[0m
+[0;32mI (2292) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.26 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2312) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.23 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2322) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.22 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2332) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.20 | Pitch: -61.96 | PitchError: 63.96[0m
+[0;32mI (2352) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.17 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2362) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.15 | Pitch: -61.96 | PitchError: 63.96[0m
+[0;32mI (2372) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.14 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2392) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.11 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2402) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.09 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2412) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.08 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2432) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.06 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (2442) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.04 | Pitch: -61.96 | PitchError: 63.96[0m
+[0;32mI (2452) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.04 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (2472) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.01 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (2482) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.00 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (2492) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.99 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (2512) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.96 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (2522) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.95 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (2532) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.94 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (2552) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.91 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (2562) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.91 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (2582) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.88 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (2592) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.87 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (2602) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.87 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (2622) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.85 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (2632) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.84 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (2642) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.82 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (2662) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.86 | Pitch: -61.92 | PitchError: 63.92[0m
+[0;32mI (2672) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.84 | Pitch: -61.93 | PitchError: 63.93[0m
+[0;32mI (2682) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.77 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (2702) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.77 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (2712) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.75 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (2722) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.79 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (2742) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.78 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (2752) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.80 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (2762) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.80 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (2782) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.78 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (2792) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.77 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (2802) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.79 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (2822) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.76 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (2832) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.76 | Pitch: -62.08 | PitchError: 64.08[0m
+[0;32mI (2842) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.76 | Pitch: -62.08 | PitchError: 64.08[0m
+[0;32mI (2862) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.74 | Pitch: -62.08 | PitchError: 64.08[0m
+[0;32mI (2872) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.77 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (2882) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.78 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (2902) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.74 | Pitch: -62.08 | PitchError: 64.08[0m
+[0;32mI (2912) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.75 | Pitch: -62.08 | PitchError: 64.08[0m
+[0;32mI (2922) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.75 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (2942) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.72 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (2952) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.72 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (2962) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.72 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (2982) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.70 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (2992) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.69 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (3002) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.68 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (3022) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.66 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (3032) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.66 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (3042) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.66 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (3062) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.64 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (3072) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.64 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (3082) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.64 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (3092) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.64 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (3112) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.61 | Pitch: -62.07 | PitchError: 64.07[0m
+[0;32mI (3122) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.60 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (3132) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.59 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (3152) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.56 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (3162) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.57 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (3182) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.55 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (3192) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.55 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (3202) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.56 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (3222) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.55 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (3232) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.55 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (3242) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.55 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (3262) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.52 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (3272) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.52 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (3282) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.51 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (3302) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.49 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3312) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.48 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3322) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.48 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3342) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.46 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3352) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.46 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3362) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.46 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3382) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.45 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3392) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.45 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3402) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.45 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3422) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.43 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3432) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.43 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3442) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.43 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3462) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.41 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (3472) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.41 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3482) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.41 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3502) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.39 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3512) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.39 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3522) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.39 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3542) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.38 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3552) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.38 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3562) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.38 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3582) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.36 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3592) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.36 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3602) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.36 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3622) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.35 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3632) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.35 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3642) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.34 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3662) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.34 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3672) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.34 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3682) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.35 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3702) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.34 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3712) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.34 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3722) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.35 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3742) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.34 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (3752) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.34 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (3762) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.34 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3782) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.32 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3792) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.32 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3802) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.32 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3812) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.32 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3832) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.31 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3842) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.32 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3852) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.32 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (3862) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.32 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3882) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.30 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (3892) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.30 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (3902) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.30 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3912) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.30 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3932) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.29 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (3942) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.29 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (3952) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.29 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (3972) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.28 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (3982) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.29 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (3992) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.29 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4012) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.28 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (4022) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.29 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4032) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.29 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4052) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.27 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (4062) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.28 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4072) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.29 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4092) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.28 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4102) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.27 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4112) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.28 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4132) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.26 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4142) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.27 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4152) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.27 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4172) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.25 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4182) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.26 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4192) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.27 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4212) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.25 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (4222) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.25 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4232) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.25 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4252) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4262) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.24 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (4282) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4292) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.24 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4302) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.24 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4322) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4332) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.24 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4342) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.24 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4362) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4372) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4382) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.24 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4402) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4412) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4422) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4442) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4452) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4462) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (4482) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4492) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (4502) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (4522) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (4532) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (4542) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (4562) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (4572) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (4582) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (4602) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (4612) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4622) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4632) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4652) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4662) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4672) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4692) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4702) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4712) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (4732) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4742) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4752) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4772) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4782) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4792) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4812) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4822) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4832) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4852) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4862) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4872) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4892) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (4902) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4912) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4932) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.16 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4942) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.16 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4952) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4972) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.16 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4982) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (4992) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5002) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5022) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.16 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5032) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5042) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5052) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5072) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.16 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5082) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5092) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5102) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5122) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.16 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5132) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5142) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5152) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5172) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5182) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5192) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5202) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5222) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5232) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5242) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5252) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5272) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5282) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5292) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5302) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5322) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5332) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5342) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5352) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5372) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5382) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5392) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5402) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5422) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5432) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5442) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5462) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5472) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5482) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5502) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5512) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5522) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5542) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5552) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5562) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (5582) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5592) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5602) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5622) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (5632) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5642) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5662) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5672) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5682) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5702) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.16 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (5712) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (5722) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (5742) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.16 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (5752) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.16 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (5762) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5772) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (5792) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.16 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (5802) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (5812) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5822) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (5842) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5852) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (5862) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (5872) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (5892) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5902) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5912) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5922) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5942) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5952) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5962) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5972) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (5992) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (6002) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6012) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6022) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6042) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6052) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (6062) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (6072) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (6092) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6102) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6112) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6122) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6142) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6152) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (6162) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (6182) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6192) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6202) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6222) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6232) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6242) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6262) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6272) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6282) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (6302) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (6312) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6322) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (6332) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6352) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6362) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (6372) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6382) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6402) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6412) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6422) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (6432) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (6452) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (6462) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (6472) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (6492) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6502) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6512) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.24 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (6532) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6542) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6552) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6572) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6582) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (6592) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.24 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (6612) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (6622) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (6632) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (6652) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (6662) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (6672) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.23 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (6692) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (6702) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (6712) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (6732) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (6742) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (6752) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (6772) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.97 | PitchError: 63.97[0m
+[0;32mI (6782) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.98 | PitchError: 63.98[0m
+[0;32mI (6792) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (6802) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6822) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (6832) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (6842) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (6852) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (6872) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (6882) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (6892) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (6902) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (6922) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6932) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (6942) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (6952) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (6972) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (6982) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (6992) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7002) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (7022) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (7032) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (7042) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (7052) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (7072) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (7082) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (7092) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (7102) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7122) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7132) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (7142) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (7152) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (7172) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7182) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7192) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7202) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7222) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (7232) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7242) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7252) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7272) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7282) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7292) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7302) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7322) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7332) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7342) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7352) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7372) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7382) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7392) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7402) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7422) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.17 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7432) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7442) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7452) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7472) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7482) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (7492) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7502) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7522) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.05 | PitchError: 64.05[0m
+[0;32mI (7532) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7542) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7552) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.21 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7572) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7582) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7592) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7602) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7622) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7632) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7642) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (7662) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (7672) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.02 | PitchError: 64.02[0m
+[0;32mI (7682) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (7702) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (7712) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.18 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (7722) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (7742) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -62.00 | PitchError: 64.00[0m
+[0;32mI (7752) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (7762) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.20 | Pitch: -62.06 | PitchError: 64.06[0m
+[0;32mI (7782) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.15 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (7792) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.14 | Pitch: -61.93 | PitchError: 63.93[0m
+[0;32mI (7802) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.27 | Pitch: -61.85 | PitchError: 63.85[0m
+[0;32mI (7822) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.26 | Pitch: -61.94 | PitchError: 63.94[0m
+[0;32mI (7832) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.31 | Pitch: -62.01 | PitchError: 64.01[0m
+[0;32mI (7842) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.50 | Pitch: -61.99 | PitchError: 63.99[0m
+[0;32mI (7862) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.44 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7872) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.97 | Pitch: -62.04 | PitchError: 64.04[0m
+[0;32mI (7882) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 4.49 | Pitch: -61.86 | PitchError: 63.86[0m
+[0;32mI (7902) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 5.61 | Pitch: -61.84 | PitchError: 63.84[0m
+[0;32mI (7912) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 6.22 | Pitch: -61.84 | PitchError: 63.84[0m
+[0;32mI (7922) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 6.63 | Pitch: -61.85 | PitchError: 63.85[0m
+[0;32mI (7942) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 7.47 | Pitch: -61.72 | PitchError: 63.72[0m
+[0;32mI (7952) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 7.89 | Pitch: -61.70 | PitchError: 63.70[0m
+[0;32mI (7962) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.27 | Pitch: -61.73 | PitchError: 63.73[0m
+[0;32mI (7972) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.70 | Pitch: -61.71 | PitchError: 63.71[0m
+[0;32mI (7992) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.62 | Pitch: -61.66 | PitchError: 63.66[0m
+[0;32mI (8002) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.07 | Pitch: -61.73 | PitchError: 63.73[0m
+[0;32mI (8012) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.56 | Pitch: -61.65 | PitchError: 63.65[0m
+[0;32mI (8032) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.50 | Pitch: -61.69 | PitchError: 63.69[0m
+[0;32mI (8042) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.89 | Pitch: -61.64 | PitchError: 63.64[0m
+[0;32mI (8052) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.17 | Pitch: -61.54 | PitchError: 63.54[0m
+[0;32mI (8072) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.41 | Pitch: -61.35 | PitchError: 63.35[0m
+[0;32mI (8082) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.41 | Pitch: -61.33 | PitchError: 63.33[0m
+[0;32mI (8092) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.16 | Pitch: -61.40 | PitchError: 63.40[0m
+[0;32mI (8112) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.97 | Pitch: -61.49 | PitchError: 63.49[0m
+[0;32mI (8122) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.85 | Pitch: -61.54 | PitchError: 63.54[0m
+[0;32mI (8132) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.72 | Pitch: -61.52 | PitchError: 63.52[0m
+[0;32mI (8152) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.52 | Pitch: -61.53 | PitchError: 63.53[0m
+[0;32mI (8162) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.34 | Pitch: -61.52 | PitchError: 63.52[0m
+[0;32mI (8172) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.20 | Pitch: -61.52 | PitchError: 63.52[0m
+[0;32mI (8192) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.03 | Pitch: -61.54 | PitchError: 63.54[0m
+[0;32mI (8202) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.90 | Pitch: -61.57 | PitchError: 63.57[0m
+[0;32mI (8212) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.78 | Pitch: -61.57 | PitchError: 63.57[0m
+[0;32mI (8232) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.51 | Pitch: -61.65 | PitchError: 63.65[0m
+[0;32mI (8242) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.32 | Pitch: -61.70 | PitchError: 63.70[0m
+[0;32mI (8252) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.10 | Pitch: -61.81 | PitchError: 63.81[0m
+[0;32mI (8272) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.87 | Pitch: -62.03 | PitchError: 64.03[0m
+[0;32mI (8282) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.71 | Pitch: -62.15 | PitchError: 64.15[0m
+[0;32mI (8292) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.63 | Pitch: -62.22 | PitchError: 64.22[0m
+[0;32mI (8312) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.70 | Pitch: -61.95 | PitchError: 63.95[0m
+[0;32mI (8322) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.68 | Pitch: -61.69 | PitchError: 63.69[0m
+[0;32mI (8332) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.82 | Pitch: -61.46 | PitchError: 63.46[0m
+[0;32mI (8352) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.47 | Pitch: -61.63 | PitchError: 63.63[0m
+[0;32mI (8362) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.29 | Pitch: -61.89 | PitchError: 63.89[0m
+[0;32mI (8372) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.10 | Pitch: -61.92 | PitchError: 63.92[0m
+[0;32mI (8382) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.96 | Pitch: -61.64 | PitchError: 63.64[0m
+[0;32mI (8402) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.91 | Pitch: -61.65 | PitchError: 63.65[0m
+[0;32mI (8412) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.02 | Pitch: -61.65 | PitchError: 63.65[0m
+[0;32mI (8422) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.14 | Pitch: -61.55 | PitchError: 63.55[0m
+[0;32mI (8432) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.42 | Pitch: -61.18 | PitchError: 63.18[0m
+[0;32mI (8452) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.41 | Pitch: -59.68 | PitchError: 61.68[0m
+[0;32mI (8462) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.84 | Pitch: -58.77 | PitchError: 60.77[0m
+[0;32mI (8472) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.23 | Pitch: -57.63 | PitchError: 59.63[0m
+[0;32mI (8492) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.08 | Pitch: -54.94 | PitchError: 56.94[0m
+[0;32mI (8502) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.44 | Pitch: -53.53 | PitchError: 55.53[0m
+[0;32mI (8512) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.75 | Pitch: -52.08 | PitchError: 54.08[0m
+[0;32mI (8532) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 13.56 | Pitch: -48.60 | PitchError: 50.60[0m
+[0;32mI (8542) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 13.86 | Pitch: -46.81 | PitchError: 48.81[0m
+[0;32mI (8552) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.17 | Pitch: -45.02 | PitchError: 47.02[0m
+[0;32mI (8572) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.54 | Pitch: -41.50 | PitchError: 43.50[0m
+[0;32mI (8582) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.55 | Pitch: -39.82 | PitchError: 41.82[0m
+[0;32mI (8592) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.57 | Pitch: -38.20 | PitchError: 40.20[0m
+[0;32mI (8612) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.64 | Pitch: -35.76 | PitchError: 37.76[0m
+[0;32mI (8622) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.59 | Pitch: -34.57 | PitchError: 36.57[0m
+[0;32mI (8632) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.52 | Pitch: -33.80 | PitchError: 35.80[0m
+[0;32mI (8652) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.63 | Pitch: -32.69 | PitchError: 34.69[0m
+[0;32mI (8662) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.81 | Pitch: -32.50 | PitchError: 34.50[0m
+[0;32mI (8672) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.58 | Pitch: -32.16 | PitchError: 34.16[0m
+[0;32mI (8692) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.78 | Pitch: -31.82 | PitchError: 33.82[0m
+[0;32mI (8702) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.81 | Pitch: -31.71 | PitchError: 33.71[0m
+[0;32mI (8712) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.79 | Pitch: -31.58 | PitchError: 33.58[0m
+[0;32mI (8732) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.82 | Pitch: -31.32 | PitchError: 33.32[0m
+[0;32mI (8742) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.73 | Pitch: -31.22 | PitchError: 33.22[0m
+[0;32mI (8752) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.64 | Pitch: -31.12 | PitchError: 33.12[0m
+[0;32mI (8772) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.60 | Pitch: -30.97 | PitchError: 32.97[0m
+[0;32mI (8782) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.51 | Pitch: -30.96 | PitchError: 32.96[0m
+[0;32mI (8792) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.41 | Pitch: -30.96 | PitchError: 32.96[0m
+[0;32mI (8812) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.29 | Pitch: -31.03 | PitchError: 33.03[0m
+[0;32mI (8822) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.14 | Pitch: -31.04 | PitchError: 33.04[0m
+[0;32mI (8832) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 13.94 | Pitch: -31.04 | PitchError: 33.04[0m
+[0;32mI (8852) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 13.70 | Pitch: -30.97 | PitchError: 32.97[0m
+[0;32mI (8862) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 13.47 | Pitch: -30.92 | PitchError: 32.92[0m
+[0;32mI (8872) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 13.24 | Pitch: -30.88 | PitchError: 32.88[0m
+[0;32mI (8892) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 13.05 | Pitch: -30.85 | PitchError: 32.85[0m
+[0;32mI (8902) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.85 | Pitch: -30.86 | PitchError: 32.86[0m
+[0;32mI (8912) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.64 | Pitch: -30.86 | PitchError: 32.86[0m
+[0;32mI (8932) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.42 | Pitch: -30.84 | PitchError: 32.84[0m
+[0;32mI (8942) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.22 | Pitch: -30.81 | PitchError: 32.81[0m
+[0;32mI (8952) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.03 | Pitch: -30.77 | PitchError: 32.77[0m
+[0;32mI (8972) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.85 | Pitch: -30.75 | PitchError: 32.75[0m
+[0;32mI (8982) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.68 | Pitch: -30.71 | PitchError: 32.71[0m
+[0;32mI (8992) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.51 | Pitch: -30.70 | PitchError: 32.70[0m
+[0;32mI (9012) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.34 | Pitch: -30.80 | PitchError: 32.80[0m
+[0;32mI (9022) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.18 | Pitch: -30.86 | PitchError: 32.86[0m
+[0;32mI (9032) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.02 | Pitch: -30.92 | PitchError: 32.92[0m
+[0;32mI (9052) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.86 | Pitch: -30.99 | PitchError: 32.99[0m
+[0;32mI (9062) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.70 | Pitch: -31.02 | PitchError: 33.02[0m
+[0;32mI (9072) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.55 | Pitch: -31.04 | PitchError: 33.04[0m
+[0;32mI (9092) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.38 | Pitch: -31.03 | PitchError: 33.03[0m
+[0;32mI (9102) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.24 | Pitch: -31.03 | PitchError: 33.03[0m
+[0;32mI (9112) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.08 | Pitch: -31.04 | PitchError: 33.04[0m
+[0;32mI (9132) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.89 | Pitch: -31.00 | PitchError: 33.00[0m
+[0;32mI (9142) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.74 | Pitch: -30.98 | PitchError: 32.98[0m
+[0;32mI (9152) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.58 | Pitch: -30.92 | PitchError: 32.92[0m
+[0;32mI (9172) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.36 | Pitch: -30.79 | PitchError: 32.79[0m
+[0;32mI (9182) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.20 | Pitch: -30.72 | PitchError: 32.72[0m
+[0;32mI (9192) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.04 | Pitch: -30.67 | PitchError: 32.67[0m
+[0;32mI (9212) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.85 | Pitch: -30.58 | PitchError: 32.58[0m
+[0;32mI (9222) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.70 | Pitch: -30.52 | PitchError: 32.52[0m
+[0;32mI (9232) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.55 | Pitch: -30.45 | PitchError: 32.45[0m
+[0;32mI (9242) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.38 | Pitch: -30.38 | PitchError: 32.38[0m
+[0;32mI (9262) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.16 | Pitch: -30.04 | PitchError: 32.04[0m
+[0;32mI (9272) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 7.96 | Pitch: -29.83 | PitchError: 31.83[0m
+[0;32mI (9282) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 7.69 | Pitch: -29.49 | PitchError: 31.49[0m
+[0;32mI (9302) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 7.12 | Pitch: -27.91 | PitchError: 29.91[0m
+[0;32mI (9312) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 6.70 | Pitch: -27.01 | PitchError: 29.01[0m
+[0;32mI (9322) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 6.23 | Pitch: -25.95 | PitchError: 27.95[0m
+[0;32mI (9342) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 5.43 | Pitch: -23.32 | PitchError: 25.32[0m
+[0;32mI (9352) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 4.93 | Pitch: -21.91 | PitchError: 23.91[0m
+[0;32mI (9362) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 4.44 | Pitch: -20.40 | PitchError: 22.40[0m
+[0;32mI (9382) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.54 | Pitch: -17.26 | PitchError: 19.26[0m
+[0;32mI (9392) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.05 | Pitch: -15.64 | PitchError: 17.64[0m
+[0;32mI (9402) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.69 | Pitch: -14.13 | PitchError: 16.13[0m
+[0;32mI (9422) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.74 | Pitch: -11.82 | PitchError: 13.82[0m
+[0;32mI (9432) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.81 | Pitch: -10.74 | PitchError: 12.74[0m
+[0;32mI (9442) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.02 | Pitch: -9.77 | PitchError: 11.77[0m
+[0;32mI (9462) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.58 | Pitch: -8.53 | PitchError: 10.53[0m
+[0;32mI (9472) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.79 | Pitch: -7.88 | PitchError: 9.88[0m
+[0;32mI (9482) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.96 | Pitch: -7.26 | PitchError: 9.26[0m
+[0;32mI (9502) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 4.11 | Pitch: -6.20 | PitchError: 8.20[0m
+[0;32mI (9512) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 4.10 | Pitch: -5.63 | PitchError: 7.63[0m
+[0;32mI (9522) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 4.05 | Pitch: -5.05 | PitchError: 7.05[0m
+[0;32mI (9532) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.97 | Pitch: -4.46 | PitchError: 6.46[0m
+[0;32mI (9552) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.71 | Pitch: -3.45 | PitchError: 5.45[0m
+[0;32mI (9562) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.56 | Pitch: -2.94 | PitchError: 4.94[0m
+[0;32mI (9572) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.39 | Pitch: -2.47 | PitchError: 4.47[0m
+[0;32mI (9592) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.11 | Pitch: -1.68 | PitchError: 3.68[0m
+[0;32mI (9602) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.95 | Pitch: -1.27 | PitchError: 3.27[0m
+[0;32mI (9612) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.78 | Pitch: -0.84 | PitchError: 2.84[0m
+[0;32mI (9632) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.46 | Pitch: 0.10 | PitchError: 1.90[0m
+[0;32mI (9642) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.22 | Pitch: 0.66 | PitchError: 1.34[0m
+[0;32mI (9652) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 1.97 | Pitch: 1.22 | PitchError: 0.78[0m
+[0;32mI (9662) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 1.76 | Pitch: 1.70 | PitchError: 0.30[0m
+[0;32mI (9682) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 1.46 | Pitch: 2.90 | PitchError: -0.90[0m
+[0;32mI (9692) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 1.29 | Pitch: 3.52 | PitchError: -1.52[0m
+[0;32mI (9702) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 1.13 | Pitch: 4.17 | PitchError: -2.17[0m
+[0;32mI (9722) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 1.01 | Pitch: 5.33 | PitchError: -3.33[0m
+[0;32mI (9732) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.95 | Pitch: 5.93 | PitchError: -3.93[0m
+[0;32mI (9742) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.92 | Pitch: 6.50 | PitchError: -4.50[0m
+[0;32mI (9752) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.89 | Pitch: 7.05 | PitchError: -5.05[0m
+[0;32mI (9772) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.81 | Pitch: 8.09 | PitchError: -6.09[0m
+[0;32mI (9782) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.76 | Pitch: 8.63 | PitchError: -6.63[0m
+[0;32mI (9792) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.67 | Pitch: 9.16 | PitchError: -7.16[0m
+[0;32mI (9812) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.47 | Pitch: 10.22 | PitchError: -8.22[0m
+[0;32mI (9822) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.38 | Pitch: 10.76 | PitchError: -8.76[0m
+[0;32mI (9832) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.28 | Pitch: 11.27 | PitchError: -9.27[0m
+[0;32mI (9852) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.04 | Pitch: 12.06 | PitchError: -10.06[0m
+[0;32mI (9862) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.02 | Pitch: 12.40 | PitchError: -10.40[0m
+[0;32mI (9872) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.06 | Pitch: 12.69 | PitchError: -10.69[0m
+[0;32mI (9892) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.14 | Pitch: 12.98 | PitchError: -10.98[0m
+[0;32mI (9902) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.14 | Pitch: 13.12 | PitchError: -11.12[0m
+[0;32mI (9912) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.14 | Pitch: 13.25 | PitchError: -11.25[0m
+[0;32mI (9932) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.22 | Pitch: 13.48 | PitchError: -11.48[0m
+[0;32mI (9942) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.23 | Pitch: 13.61 | PitchError: -11.61[0m
+[0;32mI (9952) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.26 | Pitch: 13.72 | PitchError: -11.72[0m
+[0;32mI (9972) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.41 | Pitch: 13.81 | PitchError: -11.81[0m
+[0;32mI (9982) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.46 | Pitch: 13.87 | PitchError: -11.87[0m
+[0;32mI (9992) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.50 | Pitch: 13.94 | PitchError: -11.94[0m
+[0;32mI (10012) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.59 | Pitch: 13.93 | PitchError: -11.93[0m
+[0;32mI (10022) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.59 | Pitch: 13.94 | PitchError: -11.94[0m
+[0;32mI (10032) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.57 | Pitch: 13.89 | PitchError: -11.89[0m
+[0;32mI (10052) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.58 | Pitch: 13.41 | PitchError: -11.41[0m
+[0;32mI (10062) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.53 | Pitch: 13.12 | PitchError: -11.12[0m
+[0;32mI (10072) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.46 | Pitch: 12.86 | PitchError: -10.86[0m
+[0;32mI (10092) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.40 | Pitch: 11.98 | PitchError: -9.98[0m
+[0;32mI (10102) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.28 | Pitch: 11.54 | PitchError: -9.54[0m
+[0;32mI (10112) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: -0.12 | Pitch: 11.01 | PitchError: -9.01[0m
+[0;32mI (10132) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.22 | Pitch: 9.14 | PitchError: -7.14[0m
+[0;32mI (10142) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.49 | Pitch: 8.11 | PitchError: -6.11[0m
+[0;32mI (10152) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 0.84 | Pitch: 6.93 | PitchError: -4.93[0m
+[0;32mI (10172) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 1.63 | Pitch: 3.89 | PitchError: -1.89[0m
+[0;32mI (10182) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.07 | Pitch: 2.34 | PitchError: -0.34[0m
+[0;32mI (10192) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.52 | Pitch: 0.72 | PitchError: 1.28[0m
+[0;32mI (10212) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.11 | Pitch: -2.74 | PitchError: 4.74[0m
+[0;32mI (10222) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.36 | Pitch: -4.50 | PitchError: 6.50[0m
+[0;32mI (10232) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.58 | Pitch: -6.15 | PitchError: 8.15[0m
+[0;32mI (10252) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.79 | Pitch: -8.40 | PitchError: 10.40[0m
+[0;32mI (10262) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.87 | Pitch: -9.54 | PitchError: 11.54[0m
+[0;32mI (10272) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.71 | Pitch: -10.47 | PitchError: 12.47[0m
+[0;32mI (10292) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.82 | Pitch: -11.69 | PitchError: 13.69[0m
+[0;32mI (10302) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.86 | Pitch: -12.19 | PitchError: 14.19[0m
+[0;32mI (10312) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.83 | Pitch: -12.62 | PitchError: 14.62[0m
+[0;32mI (10332) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.67 | Pitch: -12.59 | PitchError: 14.59[0m
+[0;32mI (10342) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.57 | Pitch: -12.48 | PitchError: 14.48[0m
+[0;32mI (10352) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.43 | Pitch: -12.31 | PitchError: 14.31[0m
+[0;32mI (10372) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.18 | Pitch: -12.56 | PitchError: 14.56[0m
+[0;32mI (10382) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.07 | Pitch: -12.82 | PitchError: 14.82[0m
+[0;32mI (10392) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.02 | Pitch: -13.27 | PitchError: 15.27[0m
+[0;32mI (10412) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.02 | Pitch: -14.54 | PitchError: 16.54[0m
+[0;32mI (10422) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.93 | Pitch: -15.21 | PitchError: 17.21[0m
+[0;32mI (10432) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.78 | Pitch: -15.99 | PitchError: 17.99[0m
+[0;32mI (10452) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.45 | Pitch: -18.18 | PitchError: 20.18[0m
+[0;32mI (10462) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.28 | Pitch: -19.34 | PitchError: 21.34[0m
+[0;32mI (10472) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.19 | Pitch: -20.80 | PitchError: 22.80[0m
+[0;32mI (10492) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.63 | Pitch: -24.17 | PitchError: 26.17[0m
+[0;32mI (10502) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 2.88 | Pitch: -25.88 | PitchError: 27.88[0m
+[0;32mI (10512) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 3.30 | Pitch: -27.48 | PitchError: 29.48[0m
+[0;32mI (10532) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 4.32 | Pitch: -30.02 | PitchError: 32.02[0m
+[0;32mI (10542) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 4.77 | Pitch: -31.22 | PitchError: 33.22[0m
+[0;32mI (10552) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 5.19 | Pitch: -32.30 | PitchError: 34.30[0m
+[0;32mI (10572) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 6.05 | Pitch: -33.85 | PitchError: 35.85[0m
+[0;32mI (10582) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 6.62 | Pitch: -34.44 | PitchError: 36.44[0m
+[0;32mI (10592) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 7.21 | Pitch: -34.75 | PitchError: 36.75[0m
+[0;32mI (10612) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 7.76 | Pitch: -34.29 | PitchError: 36.29[0m
+[0;32mI (10622) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.14 | Pitch: -34.01 | PitchError: 36.01[0m
+[0;32mI (10632) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.48 | Pitch: -33.67 | PitchError: 35.67[0m
+[0;32mI (10652) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 8.93 | Pitch: -33.32 | PitchError: 35.32[0m
+[0;32mI (10662) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.35 | Pitch: -33.17 | PitchError: 35.17[0m
+[0;32mI (10672) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 9.88 | Pitch: -33.15 | PitchError: 35.15[0m
+[0;32mI (10692) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 10.76 | Pitch: -33.61 | PitchError: 35.61[0m
+[0;32mI (10702) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.29 | Pitch: -33.85 | PitchError: 35.85[0m
+[0;32mI (10712) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 11.85 | Pitch: -34.06 | PitchError: 36.06[0m
+[0;32mI (10732) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 12.74 | Pitch: -34.45 | PitchError: 36.45[0m
+[0;32mI (10742) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 13.21 | Pitch: -34.58 | PitchError: 36.58[0m
+[0;32mI (10752) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 13.62 | Pitch: -34.66 | PitchError: 36.66[0m
+[0;32mI (10772) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 14.60 | Pitch: -35.03 | PitchError: 37.03[0m
+[0;32mI (10782) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 15.28 | Pitch: -35.33 | PitchError: 37.33[0m
+[0;32mI (10792) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 16.17 | Pitch: -35.88 | PitchError: 37.88[0m
+[0;32mI (10812) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 17.44 | Pitch: -36.53 | PitchError: 38.53[0m
+[0;32mI (10822) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 17.99 | Pitch: -36.65 | PitchError: 38.65[0m
+[0;32mI (10832) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 18.58 | Pitch: -36.57 | PitchError: 38.57[0m
+[0;32mI (10852) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 19.93 | Pitch: -36.56 | PitchError: 38.56[0m
+[0;32mI (10862) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 :: Roll: 20.80 | Pitch: -36.56 | PitchError: 38.56[0m
+[0;32mI (10872) debug: KP: 27.000000 ::  KI: 0.000000  :: KD: 1.000000 :: Setpoint: 2.00 ::
