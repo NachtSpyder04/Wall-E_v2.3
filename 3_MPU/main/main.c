@@ -15,7 +15,7 @@ static const char *TAG = "mpu_test";
 void mpu_task(void *arg)
 {
     // Euler angle buffer includes two floats - Roll angle and Pitch angle
-    float euler_angle[2], mpu_offset[2] = {0.0f, 0.0f};
+    float euler_angle[2], mpu_offset[2] = {0.0f, 3.76f};
 
 #ifdef CONFIG_ENABLE_OLED
     // Initialising the OLED

@@ -86,7 +86,7 @@ void balance_task(void *arg)
 	 * euler_angles are the complementary pitch and roll angles obtained from mpu6050
 	 * mpu_offsets are the initial accelerometer angles at rest position
 	*/
-	float euler_angle[2], mpu_offset[2] = {0.0f, 0.0f};
+	float euler_angle[2], mpu_offset[2] = {0.0f, 3.76f};
 
 	float pitch_angle, pitch_error;
 
